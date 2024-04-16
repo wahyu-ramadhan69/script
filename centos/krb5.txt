@@ -1,0 +1,31 @@
+# Configuration snippets may be placed in this directory as well
+includedir /etc/krb5.conf.d/
+
+includedir /var/lib/sss/pubconf/krb5.include.d/
+[logging]
+ default = FILE:/var/log/krb5libs.log
+ kdc = FILE:/var/log/krb5kdc.log
+ admin_server = FILE:/var/log/kadmind.log
+
+[libdefaults]
+ default_realm = BCAFWIFI.CO.ID
+ dns_lookup_realm = true
+ dns_lookup_kdc = true
+ticket_lifetime = 24h
+renew_lifetime = 7d
+forwardable = true
+default_keytab_name = FILE:/etc/krb5.keytab
+
+[realms]
+ BCAFWIFI.CO.ID = {
+  kdc = newDCWIFI01.bcafwifi.co.id
+  admin_server = newDCWIFI01.bcafwifi.co.id
+ # admin_server = wsadc1809001.bcaf.co.id
+ # admin_server = mbcadc1809001.bcaf.co.id
+ # kdc = wsadc1809001.bcaf.co.id
+ # kdc = mbcadc1809001.bcaf.co.id
+}
+
+[domain_realm]
+ .bcafwifi.co.id = BCAFWIFI.CO.ID
+  bcafwifi.co.id = BCAFWIFI.CO.ID

@@ -1,0 +1,67 @@
+Schema:
+  Column Name                   Localized Name                Type    MaxLength
+  ----------------------------  ----------------------------  ------  ---------
+  RequestID                     Issued Request ID             Long    4 -- Indexed
+  Request.RequesterName         Requester Name                String  2048 -- Indexed
+  CommonName                    Issued Common Name            String  8192 -- Indexed
+  NotAfter                      Certificate Expiration Date   Date    8 -- Indexed
+
+Row 1:
+  Issued Request ID: 0x1
+  Requester Name: "BCAFWIFI\ADCS$"
+  Issued Common Name: "ADCS"
+  Certificate Expiration Date: 11/25/2050 2:35 PM
+
+Row 2:
+  Issued Request ID: 0x2
+  Requester Name: "BCAFWIFI\ADCS$"
+  Issued Common Name: "ADCS-Xchg"
+  Certificate Expiration Date: 12/2/2020 2:39 PM
+
+Row 3:
+  Issued Request ID: 0x3
+  Requester Name: "BCAFWIFI\ochis"
+  Issued Common Name: "jumpb.bcafwifi.co.id"
+  Certificate Expiration Date: 11/25/2022 3:09 PM
+
+Row 4:
+  Issued Request ID: 0x4
+  Requester Name: "BCAFWIFI\ochis"
+  Issued Common Name: "ADCS02"
+  Certificate Expiration Date: 11/25/2022 5:00 PM
+
+Row 5:
+  Issued Request ID: 0x5
+  Requester Name: "BCAFWIFI\NEWMPS$"
+  Issued Common Name: "NEWMPS.BCAFWIFI.CO.ID"
+  Certificate Expiration Date: 12/11/2021 6:48 PM
+
+Row 6:
+  Issued Request ID: 0x6
+  Requester Name: "BCAFWIFI\NEWMPS$"
+  Issued Common Name: "NEWMPS.BCAFWIFI.CO.ID"
+  Certificate Expiration Date: 12/28/2022 1:20 PM
+
+Row 7:
+  Issued Request ID: 0x7
+  Requester Name: "BCAFWIFI\ochis"
+  Issued Common Name: "adcs"
+  Certificate Expiration Date: 12/29/2023 3:36 PM
+
+Row 8:
+  Issued Request ID: 0x8
+  Requester Name: "BCAFWIFI\ochis"
+  Issued Common Name: "adcs"
+  Certificate Expiration Date: 12/29/2023 4:04 PM
+
+Row 9:
+  Issued Request ID: 0x9
+  Requester Name: "BCAFWIFI\ADCS$"
+  Issued Common Name: EMPTY
+  Certificate Expiration Date: 12/29/2022 4:53 PM
+
+Row 10:
+  Issued Request ID: 0xa (10)
+  Requester Name: "BCAFWIFI\ADCS$"
+  Issued Common Name: EMPTY
+  Certificate Expiration Date: 12/29/2022 4:55 PM
